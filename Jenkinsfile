@@ -3,6 +3,6 @@ node{
       git 'https://github.com/sowmyachandrappa/cypressTestDemo'
       }
     stage(Compile-Package){
-    sh 'npm run runtests'
+    bat label: '', script: 'npm run runtests'
     }
     }
