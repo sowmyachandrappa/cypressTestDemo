@@ -1,8 +1,8 @@
 node{
     stage('SCM Checkout'){
-      git 'https://github.com/sowmyachandrappa/cypressTestDemo'
+      git https://github.com/sowmyachandrappa/cypressTestDemo''
       }
     stage(Compile-Package){
-    bat label: '', script: 'npm run runtests'
+   sh label: '', script: 'npm run runtests'
     }
     }
